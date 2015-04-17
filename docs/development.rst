@@ -10,7 +10,7 @@ Get involved
 There are several ways to join the community and stay up to date. Here are some of them:
 
 * **Mailing list**: Join our mailing list by sending an email to `bottlepy+subscribe@googlegroups.com <mailto:bottlepy+subscribe@googlegroups.com>`_ (no google account required).
-* **Twitter**: `Follow us on Twitter <twitter.com/bottlepy>`_ or search for the `#bottlepy <https://twitter.com/#!/search/%23bottlepy>`_ tag.
+* **Twitter**: `Follow us on Twitter <https://twitter.com/bottlepy>`_ or search for the `#bottlepy <https://twitter.com/#!/search/%23bottlepy>`_ tag.
 * **IRC**: Join `#bottlepy on irc.freenode.net <irc://irc.freenode.net/bottlepy>`_ or use the `web chat interface <http://webchat.freenode.net/?channels=bottlepy>`_.
 * **Google plus**: We sometimes `blog about Bottle, releases and technical stuff <https://plus.google.com/b/104025895326575643538/104025895326575643538/posts>`_ on our Google+ page.
 
@@ -18,11 +18,12 @@ There are several ways to join the community and stay up to date. Here are some 
 Get the Sources
 ---------------
 
-The bottle `development repository <https://github.com/defnull/bottle>`_ and the `issue tracker <https://github.com/defnull/bottle/issues>`_ are both hosted at `github <https://github.com/defnull/bottle>`_. If you plan to contribute, it is a good idea to create an account there and fork the main repository. This way your changes and ideas are visible to other developers and can be discussed openly. Even without an account, you can clone the repository or just download the latest development version as a source archive.
+The bottle `development repository <https://github.com/bottlepy/bottle>`_ and the `issue tracker <https://github.com/bottlepy/bottle/issues>`_ are both hosted at `github <https://github.com/bottlepy/bottle>`_. If you plan to contribute, it is a good idea to create an account there and fork the main repository. This way your changes and ideas are visible to other developers and can be discussed openly. Even without an account, you can clone the repository or just download the latest development version as a source archive.
 
-* **git:** ``git clone git://github.com/defnull/bottle.git``
-* **git/https:** ``git clone https://github.com/defnull/bottle.git``
-* **Download:** Development branch as `tar archive <http://github.com/defnull/bottle/tarball/master>`_ or `zip file <http://github.com/defnull/bottle/zipball/master>`_.
+* **git:** ``git clone git://github.com/bottlepy/bottle.git``
+* **git/https:** ``git clone https://github.com/bottlepy/bottle.git``
+* **Download:** Development branch as `tar archive <http://github.com/bottlepy/bottle/tarball/master>`_ or `zip file <http://github.com/bottlepy/bottle/zipball/master>`_.
+* **Translations:** `transifex.com/projects/p/bottle <https://www.transifex.com/projects/p/bottle/>`_
 
 
 Releases and Updates
@@ -99,7 +100,7 @@ You need a recent version of Sphinx to build the documentation. The recommended 
   ./venv/pip install -U sphinx
 
   # Clone or download bottle from github
-  git clone https://github.com/defnull/bottle.git
+  git clone https://github.com/bottlepy/bottle.git
 
   # Activate build environment
   source ./venv/bin/activate
@@ -124,7 +125,7 @@ GIT Workflow Examples
 
 The following examples assume that you have an (free) `github account <https://github.com>`_. This is not mandatory, but makes things a lot easier.
 
-First of all you need to create a fork (a personal clone) of the official repository. To do this, you simply click the "fork" button on the `bottle project page <https://github.com/defnull/bottle>`_. When the fork is done, you will be presented with a short introduction to your new repository.
+First of all you need to create a fork (a personal clone) of the official repository. To do this, you simply click the "fork" button on the `bottle project page <https://github.com/bottlepy/bottle>`_. When the fork is done, you will be presented with a short introduction to your new repository.
 
 The fork you just created is hosted at github and read-able by everyone, but write-able only by you. Now you need to clone the fork locally to actually make changes to it. Make sure you use the private (read-write) URL and *not* the public (read-only) one::
 
@@ -133,7 +134,7 @@ The fork you just created is hosted at github and read-able by everyone, but wri
 Once the clone is complete your repository will have a remote named "origin" that points to your fork on github. Don’t let the name confuse you, this does not point to the original bottle repository, but to your own fork. To keep track of the official repository, add another remote named "upstream"::
 
   cd bottle
-  git remote add upstream git://github.com/defnull/bottle.git
+  git remote add upstream git://github.com/bottlepy/bottle.git
   git fetch upstream
 
 Note that "upstream" is a public clone URL, which is read-only. You cannot push changes directly to it. Instead, we will pull from your public repository. This is described later.

@@ -9,7 +9,7 @@ This guide explains the plugin API and how to write custom plugins. I suggest re
 
 .. note::
 
-    This is a draft. If you see any errors or find that a specific part is not explained clear enough, please tell the `mailing-list <mailto:bottlepy@googlegroups.com>`_ or file a `bug report <https://github.com/defnull/bottle/issues>`_.
+    This is a draft. If you see any errors or find that a specific part is not explained clear enough, please tell the `mailing-list <mailto:bottlepy@googlegroups.com>`_ or file a `bug report <https://github.com/bottlepy/bottle/issues>`_.
 
 
 How Plugins Work: The Basics
@@ -17,7 +17,7 @@ How Plugins Work: The Basics
 
 The plugin API builds on the concept of `decorators <http://docs.python.org/glossary.html#term-decorator>`_. To put it briefly, a plugin is a decorator applied to every single route callback of an application.
 
-Of course, this is just a simplification. Plugins can do a lot more than just decorating route callbacks, but it is a good starting point. Lets have a look at some code::
+This is just a simplification. Plugins can do a lot more than just decorating route callbacks, but it is a good starting point. Lets have a look at some code::
 
     from bottle import response, install
     import time

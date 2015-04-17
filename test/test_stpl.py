@@ -261,6 +261,9 @@ class TestSTPLDir(unittest.TestCase):
             18
         '''
         self.assertRenders(source, result)
+        source_wineol = '<% a = 5\r\nb = 6\r\nc = 7\r\n%>\r\n{{a+b+c}}'
+        result_wineol = '18'
+        self.assertRenders(source_wineol, result_wineol)
 
     def test_multiline_ignore_eob_in_string(self):
         source = '''
@@ -332,6 +335,18 @@ class TestSTPLDir(unittest.TestCase):
                   line 2
         '''
         self.assertRenders(source, result)
+
+    def test_multiline_comprehensions_in_code_line(self):
+        self.assertRenders(source='''
+            % a = [
+            %    (i + 1)
+            %    for i in range(5)
+            %    if i%2 == 0
+            % ]
+            {{a}}
+        ''', result='''
+            [1, 3, 5]
+        ''')
 
 if __name__ == '__main__': #pragma: no cover
     unittest.main()
